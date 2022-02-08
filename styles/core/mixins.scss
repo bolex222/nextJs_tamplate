@@ -2,54 +2,57 @@
 
 // fluid typography from css-trick: https://css-tricks.com/snippets/css/fluid-typography/
 @mixin size_manager($fontSizeMin, $fontSizeMax, $viewportMin, $viewportMax) {
-  font-size: calc((#{$fontSizeMax} - #{$fontSizeMin}) * ((100vw - #{$viewportMin}px) / (#{$viewportMax} - #{$viewportMin})) + #{$fontSizeMin}px);
+  font-size: calc(
+    (#{$fontSizeMax} - #{$fontSizeMin}) *
+      ((100vw - #{$viewportMin}px) / (#{$viewportMax} - #{$viewportMin})) + #{$fontSizeMin}px
+  );
 }
 
 // MEDIA QUERY based on viewport variables
 @mixin phone_and_thinner_viewport {
   @media screen and (max-width: $viewport-thin) {
-    @content
+    @content;
   }
 }
 
 @mixin phone_and_larger_viewport {
   @media screen and (min-width: $viewport-thin) {
-    @content
+    @content;
   }
 }
 
 @mixin medium_and_thinner_viewport {
   @media screen and (max-width: $viewport-medium) {
-    @content
+    @content;
   }
 }
 
 @mixin medium_and_larger_viewport {
   @media screen and (min-width: $viewport-medium) {
-    @content
+    @content;
   }
 }
 
 @mixin regular_and_thinner_viewport {
   @media screen and (max-width: $viewport-regular) {
-    @content
+    @content;
   }
 }
 
 @mixin regular_and_larger_viewport {
   @media screen and (min-width: $viewport-regular) {
-    @content
+    @content;
   }
 }
 
 @mixin large_and_thinner_viewport {
   @media screen and (max-width: $viewport-large) {
-    @content
+    @content;
   }
 }
 
 @mixin large_and_larger_viewport {
   @media screen and (min-width: $viewport-large) {
-    @content
+    @content;
   }
 }

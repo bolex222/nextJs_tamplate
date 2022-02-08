@@ -15,17 +15,24 @@ a {
   box-sizing: border-box;
 }
 
-
 html {
-  @include size_manager($font-size_base_ul, $font-size_high_ul, $fluid-typo-vp-min-size_ul, $viewport-medium_ul);
+  @include size_manager(
+    $font-size_base_ul,
+    $font-size_high_ul,
+    $fluid-typo-vp-min-size_ul,
+    $viewport-medium_ul
+  );
 
   -webkit-marquee-increment: 0vw; // fix from https://www.sarasoueidan.com/blog/safari-fluid-typography-bug-fix/
 }
 
 @include medium_and_larger_viewport {
   html {
-    @include size_manager($font-size_low_ul, $font-size_base_ul, $viewport-medium_ul, $viewport-large_ul);
+    @include size_manager(
+      $font-size_low_ul,
+      $font-size_base_ul,
+      $viewport-medium_ul,
+      $viewport-large_ul
+    );
   }
 }
-
-
