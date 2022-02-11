@@ -1,7 +1,7 @@
-import React from 'react'
 import '../styles/main.scss'
+import React from 'react'
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
   return <Component {...pageProps} />
 }
 

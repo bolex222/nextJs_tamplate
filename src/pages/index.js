@@ -1,5 +1,12 @@
 import React from 'react'
+import HeroBlock from '../components/blocks/HeroBlock'
 
-export default function Home() {
-  return <main>empty project rn</main>
+const Home = () => {
+  return (
+    <main>
+      <HeroBlock />
+    </main>
+  )
 }
+
+export default Home
